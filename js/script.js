@@ -4,7 +4,7 @@ let song = '';
 let finish = false;
 
 let number = ['9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.'];
-let last = ['/', 'X', '+', '-'];
+let last = ['/', 'x', '+', '-'];
 
 let field = document.querySelector('.cals__field p');
 
@@ -33,11 +33,11 @@ document.addEventListener('click', function(ever){
       else if(!a == '' && !b == '' && finish){
          b = key;
          finish = false;
-         field.textContent = b;
+         field.textContent = a + " " + song + " " + b;
       }
       else{
          b += key;
-         field.textContent = b;
+         field.textContent = a + " " + song + " " + b;
       }
       return
    }
@@ -45,7 +45,7 @@ document.addEventListener('click', function(ever){
 
    if(last.includes(key)){
       song = key;
-      field.textContent = song;
+      field.textContent = a + " " + song;
       return
    }
 
@@ -57,7 +57,7 @@ document.addEventListener('click', function(ever){
          case "-":
             a = (+a) - (+b);
             break;
-         case "X":
+         case "x":
             a = (+a) * (+b);
             break;
          case "/":
