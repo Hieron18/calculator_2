@@ -1,0 +1,89 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   border: 0px;
+}
+h1{
+   color: red;
+   
+   text-align: center;
+   font-size: 30px;
+}
+.cals {
+}
+.cals__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.cals__block {
+   max-width: 100%;
+   max-height: 100%;
+   background-color: #e7e7e7;
+   border: 1px solid silver;
+}
+.cals__field{
+   display: flex;
+   justify-content: flex-end;
+   padding: 0px 15px;
+   height: 80px;
+   align-items: center;
+}
+.cals__field p{
+      font-size: 36px;
+      font-weight: 800;
+}
+.cals__check {
+   display: flex;
+   height: 100%;
+}
+.cals__left {
+   display: grid;
+   gap: 2px;
+   justify-content: end;
+   width: 100%;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(5,1fr);
+}
+.cals__button {
+   display: flex;
+   cursor: pointer;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 60px;
+   background-color: #fff;
+}
+.clean {
+   background-color: #f0f0f0;
+}
+.blue{
+   background-color: #8abae0;
+}
+.button {
+}
+.cals__left .cals__button{
+   /* margin-bottom: -2px; */
+}
+.cals__right .cals__button {
+   margin: 0px 0px 2px 2px;
+}
+.cals__right .cals__button:last-child {
+   margin: 0px 0px 0px 2px;
+}
+.song {
+}
+.blue {
+}
+
+@media screen and (max-width: 768px){
+   .cals__block{
+      max-width: 300px;
+   }
+   .cals__button{
+      width: 72px;
+      height: 55px;
+   }
+}
